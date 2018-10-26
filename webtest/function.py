@@ -5,6 +5,8 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'home.html')
 
+def about(request):
+    return render(request, 'about.html')
 
 def count(request):
     usr_text = request.GET['text']
@@ -23,3 +25,4 @@ def count(request):
             'dict': word_dict,
             'sorted_dict': sorted_dict
         })
+
